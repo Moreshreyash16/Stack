@@ -18,13 +18,18 @@ public class stackds {
             arr[top]=n;
         }
     }
-    public void pop(int n){
+    public void pop(){
         if(top==-1){
             System.out.println("Stack is empty");
         }
         else{
             top-=1;
 
+        }
+    }
+    public void peek(){
+        if(top!=-1){
+            System.out.println("top element is " + arr[top]);
         }
     }
     public void show(){
@@ -38,5 +43,10 @@ public class stackds {
         st.push(36);
         st.push(56);
         st.show();
+        st.pop();
+        st.show();
+        st.peek();
+
+
     }
 }
